@@ -21,6 +21,7 @@ jobs:
   sync-to-jira-test:
     name: Sync to JIRA TEST
     runs-on: ubuntu-latest
+    if: ${{ !github.event.repository.fork }}
     permissions:
       contents: read
       issues: write

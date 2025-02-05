@@ -7,12 +7,12 @@ on:
   pull_request:
   workflow_dispatch:
     inputs:
-      cron-job:
+      cron_job:
         description: 'Run the job on a schedule'
         required: false
         default: false
         type: boolean
-      jira-project:
+      jira_project:
         description: 'Jira project key'
         required: true
         type: string
@@ -32,4 +32,5 @@ jobs:
       - name: Run synchronization to Jira
         uses: tomassebestik/github-action-testing@master
         with:
-          cron-job: true
+          cron_job: true
+          jira_project: TEST

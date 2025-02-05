@@ -1,4 +1,4 @@
 ## Test GH actions - caller project
 
 
-update 1
+update 2
